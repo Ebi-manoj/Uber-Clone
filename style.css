@@ -1,3 +1,33 @@
-.navbar-toggler-icon {
-  background-color: aqua;
+/* default bootstrap behaviour */
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* style starts here */
+nav {
+  background-color: black;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.login-btn {
+  text-decoration: none;
+  color: white;
+}
+.nav-item .nav-link {
+  color: white !important;
+  margin-right: 0.8rem;
+}
+.signup-btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
