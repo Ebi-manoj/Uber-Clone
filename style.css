@@ -8,7 +8,7 @@
   box-shadow: none !important;
 }
 
-/* style starts here */
+/* .................style starts here................. */
 nav {
   background-color: black;
 }
@@ -31,14 +31,14 @@ nav {
   font-size: 0.8rem;
   font-weight: 600;
 }
+
 /* ..................section.................. */
 .book-ride h1 {
   font-size: 3rem;
   font-weight: 700;
 }
-.map-box {
-  width: 30rem;
-  height: 20rem;
+#map {
+  border-radius: 10px;
 }
 .input-fields {
   width: 65%;
@@ -47,7 +47,7 @@ nav {
 
 .input-fields input {
   padding: 0.6rem 0.5rem 0.6rem 1.4rem;
-  border-radius: 7px;
+  border-radius: 8px;
   border: 2px solid white;
   outline: none;
 }
@@ -58,19 +58,63 @@ nav {
   width: 50%;
 }
 .date-input select {
+  border-radius: 8px;
   width: 50%;
   border: 0;
+  padding-left: 1rem;
+}
+.pickup-input {
+  position: relative;
+}
+.pickup-input i {
+  position: absolute;
+  right: 5%;
+  top: 10;
+  transform: translate(-50%, -50%);
+}
+.btn-see-price {
+  outline: none;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ..........suggestion section.................... */
+#suggestion p {
+  font-size: 0.8rem;
+}
+#suggestion .wrapper {
+  background-color: #f2f2f2;
+}
+.ride-details {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  background-color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 /* .................Media queries.............. */
 
 @media (max-width: 768px) {
+  #main {
+    background-color: black;
+  }
   .book-ride h1 {
     width: 100% !important;
     font-size: 2rem;
+    color: white;
   }
   .input-fields {
     width: 100%;
+  }
+  .btn-see-price {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -82,7 +126,7 @@ nav {
     background-color: black;
     transform: rotate(90deg);
     position: absolute;
-    top: 30%;
+    top: 23%;
     left: -2%;
   }
   .circle-square i {
@@ -92,7 +136,7 @@ nav {
     transform: rotate(90deg);
     position: absolute;
     z-index: 2;
-    top: 11%;
+    top: 8%;
     left: -10%;
   }
 }
