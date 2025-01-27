@@ -10,6 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </head>
   <body>
     <!-- ...........Nav bar.............. -->
@@ -93,10 +100,52 @@
       </div>
     </nav>
 
+    <!-- .............section....................... -->
+    <section class="mt-5 px-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="book-ride">
+              <h1 class="mb-5 w-75">Go anywhere with Uber</h1>
+              <div class="input-fields d-flex flex-column">
+                <input
+                  type="text"
+                  placeholder="Pickup location"
+                  class="mb-3 bg-light"
+                />
+                <input
+                  type="text"
+                  placeholder="Dropoff location"
+                  class="mb-3 bg-light"
+                />
+                <div class="date-input d-none d-md-flex gap-2">
+                  <input type="date" class="bg-light" />
+                  <select name="" id="" class="bg-light">
+                    <option value="" selected>Now</option>
+                    <option value="">11:45</option>
+                    <option value="">11:00</option>
+                    <option value="">10:30</option>
+                    <option value="">10:00</option>
+                  </select>
+                </div>
+                <div class="circle-square d-none d-xl-block">
+                  <i class="fa-solid fa-square mx-5"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="map" class="w-100 h-100"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://kit.fontawesome.com/5899076747.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

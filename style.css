@@ -31,3 +31,68 @@ nav {
   font-size: 0.8rem;
   font-weight: 600;
 }
+/* ..................section.................. */
+.book-ride h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.map-box {
+  width: 30rem;
+  height: 20rem;
+}
+.input-fields {
+  width: 65%;
+  position: relative;
+}
+
+.input-fields input {
+  padding: 0.6rem 0.5rem 0.6rem 1.4rem;
+  border-radius: 7px;
+  border: 2px solid white;
+  outline: none;
+}
+.input-fields input:focus {
+  border: 2px solid black;
+}
+.date-input input {
+  width: 50%;
+}
+.date-input select {
+  width: 50%;
+  border: 0;
+}
+
+/* .................Media queries.............. */
+
+@media (max-width: 768px) {
+  .book-ride h1 {
+    width: 100% !important;
+    font-size: 2rem;
+  }
+  .input-fields {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input-fields::after {
+    content: '';
+    width: 2.7rem;
+    height: 0.5px;
+    background-color: black;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 30%;
+    left: -2%;
+  }
+  .circle-square i {
+    font-size: 0.4rem;
+  }
+  .circle-square {
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 2;
+    top: 11%;
+    left: -10%;
+  }
+}
