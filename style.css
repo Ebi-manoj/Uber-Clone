@@ -139,6 +139,22 @@ footer {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+.copy-rights {
+  color: #b7b7b7;
+  font-size: 0.8rem;
+}
+.copy-rights ul li {
+  list-style-type: none;
+}
+.app-store {
+  width: 50%;
+}
+.play-store {
+  width: 50%;
+}
+.apple-store {
+  width: 50%;
+}
 /* .................Media queries.............. */
 
 @media (max-width: 768px) {
@@ -162,6 +178,17 @@ footer {
   }
   .section-left-btns {
     width: 100%;
+  }
+}
+@media (min-width: 968px) {
+  .app-store {
+    width: 20%;
+  }
+  .play-store {
+    width: 50%;
+  }
+  .apple-store {
+    width: 50%;
   }
 }
 
