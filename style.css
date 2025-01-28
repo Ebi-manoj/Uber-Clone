@@ -37,6 +37,7 @@ nav {
   font-size: 3rem;
   font-weight: 700;
 }
+
 #map {
   border-radius: 10px;
 }
@@ -106,7 +107,7 @@ nav {
   flex-basis: 50%;
 }
 
-#login .section-left h1 {
+.feature-sections .section-left h1 {
   font-size: 3rem;
   font-weight: 700;
 }
@@ -119,7 +120,7 @@ nav {
   font-size: 1rem;
   border-radius: 10px;
 }
-.section-left-btns a {
+.signup-link {
   text-decoration: none;
   color: rgb(39, 39, 39);
 }
@@ -144,7 +145,7 @@ nav {
     background-color: white;
     color: black;
   }
-  #login .section-left h1 {
+  .feature-sections .section-left h1 {
     font-size: 2rem;
   }
   .section-left-btns {
