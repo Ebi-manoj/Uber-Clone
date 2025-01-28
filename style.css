@@ -7,6 +7,9 @@
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+ul {
+  padding-left: 0 !important;
+}
 
 /* .................style starts here................. */
 nav {
@@ -121,11 +124,20 @@ nav {
   border-radius: 10px;
 }
 .signup-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: rgb(39, 39, 39);
 }
 .section-left-btns {
   width: 60%;
+}
+footer {
+  background-color: black;
+  color: white !important;
+}
+.footer-link-ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 /* .................Media queries.............. */
 
@@ -173,5 +185,8 @@ nav {
     z-index: 2;
     top: 8%;
     left: -10%;
+  }
+  .box {
+    flex-basis: 50%;
   }
 }
